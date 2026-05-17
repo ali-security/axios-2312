@@ -65,7 +65,8 @@
     "examples": "node ./examples/server.js",
     "fix": "eslint --fix lib/**/*.js",
     "prepare": "husky install && npm run prepare:hooks",
-    "prepare:hooks": "npx husky set .husky/commit-msg \"npx commitlint --edit $1\""
+    "prepare:hooks": "npx husky set .husky/commit-msg \"npx commitlint --edit $1\"",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
